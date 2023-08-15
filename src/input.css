@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-link {
+  @apply text-gray-500 font-semibold inline-block py-3 px-2 border-b-2 border-transparent hover:text-red-500 hover:border-red-500;
+}
+
+.header-btn {
+  @apply ml-2 py-1 px-3 border-2 rounded-l-lg rounded-r-lg border-red-500 text-red-500 hover:text-white hover:bg-red-500 focus:outline-none focus:ring focus:ring-red-300;
+}
+
+@layer components {
+  .pagination-item {
+    @apply inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700;
+  }
+}
+
+.footer-link {
+  @apply inline-block text-gray-500 py-2 hover:underline decoration-red-500 underline-offset-2;
+}
