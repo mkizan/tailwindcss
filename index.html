@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="max-w-screen-xl mx-auto">
+  <body class="bg-white dark:bg-slate-900 font-main">
+    <div class="max-w-screen-xl mx-auto h-screen grid grid-rows-layout">
       <!-- header -->
       <header class="px-2 border-b flex items-center justify-between h-14">
-        <a class="uppercase font-bold text-red-500" href="#">KizanM</a>
+        <a class="uppercase font-bold text-red-500 dark:text-red-600" href="#"
+          >KizanM</a
+        >
         <nav class="hidden md:flex items-center">
           <ul class="inline-flex items-center">
             <li>
@@ -31,7 +33,7 @@
             </li>
           </ul>
         </nav>
-        <button class="inline-block md:hidden">
+        <button class="inline-block md:hidden dark:text-slate-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -49,283 +51,407 @@
         </button>
       </header>
 
-      <!-- breadcrumbs -->
-      <div class="px-2 flex items-center">
-        <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
-          <a class="text-gray-600 hover:text-red-500" href="#"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-5 h-5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
-              />
-            </svg>
-          </a>
-          <span class="text-gray-300 mx-2"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-5 h-5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </span>
-          <a class="text-gray-600 hover:text-red-500" href="#">News</a>
-          <span class="text-gray-300 mx-2"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-5 h-5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </span>
-          <a class="text-gray-600 hover:text-red-500" href="#">Tech</a>
-        </div>
-      </div>
-
-      <!-- banners -->
-      <section class="px-2 lg:flex lg:space-x-2">
-        <a
-          href="#"
-          class="w-full lg:w-2/3 bg-violet-300 h-96 mb-4 relative rounded inline-block overflow-hidden"
-        >
-          <div
-            class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"
-          ></div>
-          <img
-            class="absolute left-0 top-0 w-full h-full z-0 object-cover"
-            src="/dist/images/war-in-Ukraine-2.webp"
-            alt="russia strikes Ukraine"
-          />
-          <div class="p-4 absolute bottom-0 left-0 z-20">
-            <h2 class="text-4xl text-gray-100 font-semibold leading-tight">
-              russia <span class="uppercase">strikes Ukraine</span>
-            </h2>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          class="w-full lg:w-1/3 bg-pink-300 h-96 mb-4 relative rounded inline-block overflow-hidden"
-        >
-          <div
-            class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"
-          ></div>
-          <img
-            class="absolute left-0 top-0 w-full h-full z-0 object-cover"
-            src="/dist/images/newspaper-Ukraine-2.webp"
-            alt="news"
-          />
-          <div class="p-4 absolute bottom-0 left-0 z-20">
-            <h2 class="text-4xl text-gray-100 font-semibold leading-tight">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reiciendis, aperiam.
-            </h2>
-          </div>
-        </a>
-      </section>
-
-      <main class="lg:flex">
-        <div class="w-full lg:w-2/3">
-          <!-- post news -->
-          <section class="px-2">
-            <a href="#" class="block w-full md:flex mb-10">
-              <img
-                class="w-full md:w-48 h-48 opacity-80 object-cover md:mr-4"
-                src="/dist/images/nyc-2.webp"
-                alt="nyc"
-              />
-              <span class="flex">
-                <div>
-                  <h3 class="mb-2 text-gray-700 font-bold text-2xl">
-                    Lorem ipsum dolor sit amet.
-                  </h3>
-                  <p class="text-gray-700">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nemo ex minus nisi, unde consequuntur consequatur culpa
-                    autem. Repellat ratione eos illum quam optio magnam
-                    consectetur, modi voluptatem, excepturi non vero!
-                  </p>
-                </div>
-              </span>
-            </a>
-            <a href="#" class="block w-full md:flex mb-10">
-              <img
-                class="w-full md:w-48 h-48 opacity-80 object-cover md:mr-4"
-                src="/dist/images/tailwindcss-2.webp"
-                alt="nyc"
-              />
-              <span class="flex">
-                <div>
-                  <h3 class="mb-2 text-gray-700 font-bold text-2xl">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </h3>
-                  <p class="text-gray-700">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Commodi modi alias pariatur enim cum voluptate facilis quas.
-                    Id nemo consequatur, nulla saepe nobis, quod, numquam magnam
-                    quidem amet asperiores sunt?
-                  </p>
-                </div>
-              </span>
-            </a>
-            <a href="#" class="block w-full md:flex mb-10">
-              <img
-                class="w-full md:w-48 h-48 opacity-80 object-cover md:mr-4"
-                src="/dist/images/react-news-2.webp"
-                alt="nyc"
-              />
-              <span class="flex">
-                <div>
-                  <h3 class="mb-2 text-gray-700 font-bold text-2xl">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing.
-                  </h3>
-                  <p class="text-gray-700">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Culpa quos id eius at distinctio autem nobis rerum
-                    voluptates tempora, vel accusamus, expedita accusantium.
-                    Ducimus, non!
-                  </p>
-                </div>
-              </span>
-            </a>
-          </section>
-
-          <!-- pagination -->
-          <div class="mt-20 mb-10">
-            <ul class="flex justify-center">
-              <li>
-                <a href="#" class="pagination-item rounded-l-lg">Previous</a>
-              </li>
-              <li>
-                <a href="#" class="pagination-item">1</a>
-              </li>
-              <li>
-                <a href="#" class="pagination-item">2</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="pagination-item text-red-500 hover:bg-red-100 hover:text-red-500"
-                  >3</a
-                >
-              </li>
-              <li>
-                <a href="#" class="pagination-item">4</a>
-              </li>
-              <li>
-                <a href="#" class="pagination-item">5</a>
-              </li>
-              <li>
-                <a href="#" class="pagination-item rounded-r-lg">Next</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0"
-        >
-          <!-- topics -->
-          <div class="w-full md:w-1/2 lg:w-full mb-5">
-            <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">
-              Popular news
-            </h5>
-            <ul>
-              <li class="px-1 py-4 border-white hover:border-gray-200">
-                <a href="#" class="flex items-center text-gray-600">
-                  <span
-                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-300 to-blue-700"
-                  ></span>
-                  React
-                  <span class="text-gray-500 ml-auto">23 articles</span>
-                </a>
-              </li>
-              <li class="px-1 py-4 border-white hover:border-gray-200">
-                <a href="#" class="flex items-center text-gray-600">
-                  <span
-                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-400 to-green-700"
-                  ></span>
-                  Vue
-                  <span class="text-gray-500 ml-auto">23 articles</span>
-                </a>
-              </li>
-              <li class="px-1 py-4 border-white hover:border-gray-200">
-                <a href="#" class="flex items-center text-gray-600">
-                  <span
-                    class="inline-block w-4 h-4 mr-3 bg-red-600 bg-gradient-to-tr from-red-500 to-red-700"
-                  ></span>
-                  Angular
-                  <span class="text-gray-500 ml-auto">23 articles</span>
-                </a>
-              </li>
-              <li class="px-1 py-4 border-white hover:border-gray-200">
-                <a href="#" class="flex items-center text-gray-600">
-                  <span
-                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-400 to-orange-700"
-                  ></span>
-                  Svelte
-                  <span class="text-gray-500 ml-auto">23 articles</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="w-full md:w-1/2 lg:w-full">
-            <!-- divider -->
-            <div class="border border-dotted md:hidden lg:block"></div>
-
-            <!-- subscribe -->
-            <div class="my-5 md:my-0 lg:my-5">
-              <h5 class="font-bold text-lg uppercase text-gray-700 mb-2">
-                Subscribe
-              </h5>
-              <p class="text-gray-600 mb-4">Subscribe to our newsletter.</p>
-              <input
-                placeholder="your email address"
-                type="email"
-                class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600"
-              />
-              <button
-                class="px-4 py-2 bg-red-500 text-white rounded-b w-full hover:bg-red-600"
+      <div class="">
+        <!-- breadcrumbs -->
+        <div class="px-2 flex items-center">
+          <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
+            <a
+              class="dark:text-slate-400 text-gray-600 hover:text-red-500 transition-all duration-300 delay-75 ease-in-out"
+              href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
               >
-                Subscribe
-              </button>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
+                />
+              </svg>
+            </a>
+            <span class="text-gray-300 mx-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+            <a
+              class="dark:text-slate-400 text-gray-600 hover:text-red-500 transition-all duration-300 delay-75 ease-in-out"
+              href="#"
+              >News</a
+            >
+            <span class="text-gray-300 mx-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+            <a
+              class="dark:text-slate-400 text-gray-600 hover:text-red-500 transition-all duration-300 delay-75 ease-in-out"
+              href="#"
+              >Tech</a
+            >
+          </div>
+        </div>
+
+        <!-- banners -->
+        <section class="px-2 lg:flex lg:space-x-2">
+          <a
+            href="#"
+            class="w-full lg:w-2/3 bg-violet-300 h-96 mb-4 relative rounded inline-block overflow-hidden"
+          >
+            <div
+              class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"
+            ></div>
+            <img
+              class="absolute left-0 top-0 w-full h-full z-0 object-cover"
+              src="/dist/images/war-in-Ukraine-2.webp"
+              alt="russia strikes Ukraine"
+            />
+            <div class="p-4 absolute bottom-0 left-0 z-20">
+              <h2 class="text-4xl text-gray-100 font-semibold leading-tight">
+                russia <span class="uppercase">strikes Ukraine</span>
+              </h2>
+              <span
+                class="bg-gradient-to-br from-blue-600 from-15% via-yellow-400 via-85% to-red-600 to-1% text-white inline-flex items-center justify-center px-4 py-1 mb-2"
+                >War in Ukraine</span
+              >
+              <div class="flex mt-3">
+                <img
+                  class="h-10 w-10 rounded-full mr-2 object-cover"
+                  src="https://randomuser.me/api/portraits/med/men/68.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="font-semibold text-gray-200 text-sm">John Doe</p>
+                  <time class="text-gray-400 text-xs">14 March</time>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="#"
+            class="w-full lg:w-1/3 bg-pink-300 h-96 mb-4 relative rounded inline-block overflow-hidden"
+          >
+            <div
+              class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"
+            ></div>
+            <img
+              class="absolute left-0 top-0 w-full h-full z-0 object-cover"
+              src="/dist/images/newspaper-Ukraine-2.webp"
+              alt="news"
+            />
+            <div class="p-4 absolute bottom-0 left-0 z-20">
+              <h2 class="text-4xl text-gray-100 font-semibold leading-tight">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, aperiam.
+              </h2>
+              <span
+                class="bg-gradient-to-br from-blue-600 from-15% via-yellow-400 via-85% to-red-600 to-1% text-white inline-flex items-center justify-center px-4 py-1 mb-2"
+                >War in Ukraine</span
+              >
+              <div class="flex mt-3">
+                <img
+                  class="h-10 w-10 rounded-full mr-2 object-cover"
+                  src="https://randomuser.me/api/portraits/med/women/74.jpg"
+                  alt=""
+                />
+                <div>
+                  <p class="font-semibold text-gray-200 text-sm">Jane Doe</p>
+                  <time class="text-gray-400 text-xs">14 March</time>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <main class="lg:flex">
+          <!-- post news -->
+          <div class="w-full lg:w-2/3">
+            <section class="px-2">
+              <a href="#" class="block w-full md:flex mb-10">
+                <img
+                  class="w-full md:w-48 h-48 opacity-80 object-cover md:mr-4"
+                  src="/dist/images/nyc-2.webp"
+                  alt="nyc"
+                />
+                <div class="flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="mb-2 text-gray-700 font-bold text-2xl dark:text-white"
+                    >
+                      Lorem ipsum dolor sit amet.
+                    </h3>
+                    <p class="text-gray-700 dark:text-slate-400">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Nemo ex minus nisi, unde consequuntur consequatur culpa
+                      autem. Repellat ratione eos illum quam optio magnam
+                      consectetur, modi voluptatem, excepturi non vero!
+                    </p>
+                  </div>
+                  <div class="flex mt-3">
+                    <img
+                      class="h-10 w-10 rounded-full mr-2 object-cover"
+                      src="https://randomuser.me/api/portraits/med/men/75.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-semibold text-gray-400 text-sm">
+                        John Doe
+                      </p>
+                      <time class="text-gray-400 text-xs">14 March</time>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="block w-full md:flex mb-10">
+                <div class="absolute left-0 top-0"></div>
+                <img
+                  class="w-full md:w-48 h-48 opacity-80 object-cover md:mr-4"
+                  src="/dist/images/tailwindcss-2.webp"
+                  alt="nyc"
+                />
+                <div class="flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="mb-2 text-gray-700 font-bold text-2xl dark:text-white"
+                    >
+                      Lorem ipsum dolor sit amet consectetur.
+                    </h3>
+                    <p class="text-gray-700 dark:text-slate-400">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Commodi modi alias pariatur enim cum voluptate facilis
+                      quas. Id nemo consequatur, nulla saepe nobis, quod,
+                      numquam magnam quidem amet asperiores sunt?
+                    </p>
+                  </div>
+                  <div class="flex mt-3">
+                    <img
+                      class="h-10 w-10 rounded-full mr-2 object-cover"
+                      src="https://randomuser.me/api/portraits/med/women/54.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-semibold text-gray-400 text-sm">
+                        Jane Doe
+                      </p>
+                      <time class="text-gray-400 text-xs">14 March</time>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="block w-full md:flex mb-10">
+                <img
+                  class="w-full md:w-48 h-48 opacity-80 object-cover md:mr-4"
+                  src="/dist/images/react-news-2.webp"
+                  alt="nyc"
+                />
+                <div class="flex flex-col justify-between">
+                  <div>
+                    <h3
+                      class="mb-2 text-gray-700 font-bold text-2xl dark:text-white"
+                    >
+                      Lorem ipsum dolor, sit amet consectetur adipisicing.
+                    </h3>
+                    <p class="text-gray-700 dark:text-slate-400">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Culpa quos id eius at distinctio autem nobis rerum
+                      voluptates tempora, vel accusamus, expedita accusantium.
+                      Ducimus, non!
+                    </p>
+                  </div>
+                  <div class="flex mt-3">
+                    <img
+                      class="h-10 w-10 rounded-full mr-2 object-cover"
+                      src="https://randomuser.me/api/portraits/med/men/62.jpg"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-semibold text-gray-400 text-sm">
+                        John Doe
+                      </p>
+                      <time class="text-gray-400 text-xs">14 March</time>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </section>
+
+            <!-- pagination -->
+            <div class="mt-20 mb-10">
+              <ul class="flex justify-center">
+                <li>
+                  <a href="#" class="pagination-item rounded-l-lg">Previous</a>
+                </li>
+                <li>
+                  <a href="#" class="pagination-item">1</a>
+                </li>
+                <li>
+                  <a href="#" class="pagination-item">2</a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="pagination-item text-red-500 hover:bg-red-100 hover:text-red-500 transition-all duration-300 delay-75 ease-in-out"
+                    >3</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="pagination-item">4</a>
+                </li>
+                <li>
+                  <a href="#" class="pagination-item">5</a>
+                </li>
+                <li>
+                  <a href="#" class="pagination-item rounded-r-lg">Next</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0"
+          >
+            <!-- topics -->
+            <div class="w-full md:w-1/2 lg:w-full mb-5">
+              <h5
+                class="font-bold text-lg uppercase text-gray-700 mb-2 dark:text-white"
+              >
+                Popular news
+              </h5>
+              <ul>
+                <li
+                  class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300 delay-75 ease-in-out"
+                >
+                  <a
+                    href="#"
+                    class="dark:border-transparent dark:hover:border-gray-200 flex items-center text-gray-600 dark:text-slate-400"
+                  >
+                    <span
+                      class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-300 to-blue-700"
+                    ></span>
+                    React
+                    <span class="text-gray-500 dark:text-slate-400 ml-auto"
+                      >23 articles</span
+                    >
+                  </a>
+                </li>
+                <li
+                  class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300 delay-75 ease-in-out"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center text-gray-600 dark:text-slate-400"
+                  >
+                    <span
+                      class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-400 to-green-700"
+                    ></span>
+                    Vue
+                    <span class="text-gray-500 dark:text-slate-400 ml-auto"
+                      >23 articles</span
+                    >
+                  </a>
+                </li>
+                <li
+                  class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300 delay-75 ease-in-out"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center text-gray-600 dark:text-slate-400"
+                  >
+                    <span
+                      class="inline-block w-4 h-4 mr-3 bg-red-600 bg-gradient-to-tr from-red-500 to-red-700"
+                    ></span>
+                    Angular
+                    <span class="text-gray-500 dark:text-slate-400 ml-auto"
+                      >23 articles</span
+                    >
+                  </a>
+                </li>
+                <li
+                  class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-300 delay-75 ease-in-out"
+                >
+                  <a
+                    href="#"
+                    class="flex items-center text-gray-600 dark:text-slate-400"
+                  >
+                    <span
+                      class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-400 to-orange-700"
+                    ></span>
+                    Svelte
+                    <span class="text-gray-500 dark:text-slate-400 ml-auto"
+                      >23 articles</span
+                    >
+                  </a>
+                </li>
+              </ul>
             </div>
 
-            <!-- divider -->
-            <div class="border border-dotted md:hidden lg:block"></div>
+            <div class="w-full md:w-1/2 lg:w-full">
+              <!-- divider -->
+              <div class="border border-dotted md:hidden lg:block"></div>
+
+              <!-- subscribe -->
+              <div class="my-5 md:my-0 lg:my-5">
+                <h5
+                  class="font-bold text-lg uppercase text-gray-700 dark:text-white mb-2"
+                >
+                  Subscribe
+                </h5>
+                <p class="text-gray-600 mb-4 dark:text-slate-400">
+                  Subscribe to our newsletter.
+                </p>
+                <input
+                  placeholder="your email address"
+                  type="email"
+                  class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600 dark:bg-slate-900 transition-all duration-300 delay-75 ease-in-out"
+                />
+                <button
+                  class="px-4 py-2 bg-red-500 text-white rounded-b w-full hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700 dark:hover:border-red-700 transition-all duration-300 delay-75 ease-in-out"
+                >
+                  Subscribe
+                </button>
+              </div>
+
+              <!-- divider -->
+              <div class="border border-dotted md:hidden lg:block"></div>
+            </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
 
       <!-- footer -->
       <footer class="border-t mt-10 py-10 px-2">
         <div class="md:flex">
           <div class="w-full mb-5 sm:w-2/5">
-            <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
+            <h6 class="font-semibold text-gray-700 mb-4 dark:text-white">
+              Company
+            </h6>
             <ul>
               <li>
                 <a class="footer-link" href="#">Team</a>
@@ -337,7 +463,9 @@
           </div>
 
           <div class="w-full mb-5 sm:w-2/5">
-            <h6 class="font-semibold text-gray-700 mb-4">Content</h6>
+            <h6 class="font-semibold text-gray-700 mb-4 dark:text-white">
+              Content
+            </h6>
             <ul>
               <li>
                 <a
@@ -364,7 +492,9 @@
           </div>
 
           <div class="w-full mb-5 sm:w-1/5">
-            <h6 class="font-semibold text-gray-700 mb-4">Contact Us</h6>
+            <h6 class="font-semibold text-gray-700 mb-4 dark:text-white">
+              Contact Us
+            </h6>
             <ul class="flex">
               <li class="mr-2">
                 <a
